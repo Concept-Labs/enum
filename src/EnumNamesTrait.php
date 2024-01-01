@@ -4,7 +4,7 @@ namespace Cl\Enum;
 /**
  * Enum names trait
  */
-trait EnumNamesTrait 
+trait EnumNamesTrait
 {
     /**
      * Enum names
