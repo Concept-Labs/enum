@@ -8,6 +8,7 @@ trait EnumArraySerializableTrait
 {
     use EnumNamesTrait;
     use EnumValuesTrait;
+    use EnumFromNameTrait;
     
     /**
      * Name => value array

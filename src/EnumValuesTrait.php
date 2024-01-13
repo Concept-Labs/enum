@@ -1,6 +1,8 @@
 <?php
 namespace Cl\Enum;
 
+use UnitEnum;
+
 /**
  * Enum values trait
  */
@@ -13,6 +15,6 @@ trait EnumValuesTrait
      */
     public static function values(): array
     {
-        return array_map(fn($enum) => $enum->value, static::cases());
+        return array_map(fn($enum) => property_exists($enum, 'value') ? $enum->value : $enum->name, static::cases());
     }
 }

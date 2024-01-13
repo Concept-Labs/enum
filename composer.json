@@ -23,7 +23,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Cl\\Enum\\Test\\": "src/test/"
+            "Cl\\Enum\\Test\\": "test/"
         }
     }
 

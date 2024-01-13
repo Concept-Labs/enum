@@ -12,8 +12,8 @@ trait EnumJsonSerializableTrait
      *
      * @return string
      */
-    public static function jsonSerialize(): string
+    public static function jsonSerialize(int|null $flags = 0, int|null $depth = 512): string
     {
-        return json_encode(static::array());
+        return json_encode(static::array(), $flags, $depth);
     }
 }
